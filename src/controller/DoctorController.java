@@ -89,7 +89,7 @@ public class DoctorController {
 
 	public void addConsultation(String consID, String patientSSN, String diag,
 			List<String> meds, String date) throws ConsultationException {
-		if (meds == null)
+		if (meds.size() == 0)
 			throw new ConsultationException("meds is null");
 
 		if (consID != null && patientSSN != null

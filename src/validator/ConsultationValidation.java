@@ -9,7 +9,7 @@ import exceptions.PatientException;
 public class ConsultationValidation {
 	public static void ssidValidate(String name, Repository rep) throws PatientException {
 		if (name.length() == 0) {
-			throw new PatientException("One of the required fields is empty!");
+			throw new PatientException("asjdkajshfdkaf!");
 		}
 		Pattern pattern = Pattern.compile("^[a-zA-Z -]+$");
 		Matcher matcher = pattern.matcher(name);
